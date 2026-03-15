@@ -1,8 +1,11 @@
-const cursor=document.querySelector(".cursor")
+window.addEventListener("scroll", () => {
 
-document.addEventListener("mousemove",e=>{
+const header = document.querySelector(".header")
 
-cursor.style.left=e.clientX+"px"
-cursor.style.top=e.clientY+"px"
+if(window.scrollY > 50){
+
+header.style.background = "rgba(0,0,0,0.9)"
+
+}
 
 })
