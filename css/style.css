@@ -106,14 +106,20 @@ img {
 }
 
 .brand {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
 }
 
 .brand-logo {
-  width: 52px;
-  height: 52px;
+  width: auto;
+  height: 65px;
+  filter: drop-shadow(0 0 10px rgba(65,189,248,0.4));;
+  transition: 0.3s;
+}
+
+.brand-logo:hover{
+  transform: scale(1.05s);
 }
 
 .brand-text strong {
@@ -175,6 +181,8 @@ img {
   color: #041019;
   background: linear-gradient(135deg, var(--primary), var(--primary-2));
   box-shadow: 0 16px 42px rgba(65, 189, 248, 0.2);
+  border-radius: 50px;
+  padding: 15px;
 }
 
 .btn-secondary {
@@ -455,6 +463,43 @@ img {
   font-weight: 700;
 }
 
+.proof {
+  padding: 40px 0;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  background: rgba(255,255,255,0.02);
+}
+
+.proof-content {
+  text-align: center;
+}
+
+.proof-title {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #cbd5f5;
+}
+
+.proof-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.proof-items span {
+  background: rgba(255,255,255,0.05);
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+.proof-highlight {
+  font-size: 1.1rem;
+  color: #67f0d8;
+}
+
 .section {
   padding: 96px 0;
 }
@@ -520,6 +565,10 @@ img {
 
 .model-content {
   padding: 24px;
+  
+}
+.model-content a{
+  margin-top: 10px;
 }
 
 .chip {
@@ -601,6 +650,10 @@ img {
 
 .compare-wrapper {
   position: relative;
+}
+
+.compare-wrapper strong{
+  margin-left: 25%;
 }
 
 .compare-panel {
