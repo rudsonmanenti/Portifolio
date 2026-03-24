@@ -415,8 +415,8 @@ img {
 .device-overlay {
   position: absolute;
   left: 22px;
-  right: 22px;
-  bottom: 22px;
+  right: 42px;
+  bottom: 62px;
   padding: 20px;
   border-radius: 22px;
   background: linear-gradient(180deg, rgba(8, 12, 25, 0.15), rgba(8, 12, 25, 0.78));
